@@ -689,6 +689,7 @@
       font-size: $top;
       margin-top: 20px;
       a{
+        padding: 5px 8px;
         border-bottom: 2px solid #fff;
         &:hover{
           border-bottom: 2px solid $real;
@@ -697,8 +698,6 @@
     }
     a{
       font-size: 21px;
-      padding: 5px 8px;
-
     }
     img{
       width: 90px;
