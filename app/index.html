@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>RealWood</title>
     <!--Bootstrap-->
     <!--    Style    -->
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +31,7 @@
 
             <!--HEADER LOGOTYPE-->
             <div class="header-logo">
-                <a href="../"><img src="img/logo.png" alt=""></a>
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
 
             <!--HEADER TEXT-->
@@ -71,12 +74,12 @@
 
             <!-- header nav -->
             <ul class="list-inline pull-left collapse navbar-collapse" id="list-inline">
-                <li class="active"><a href="products-page.php">Продукция</a></li>
-                <li><a href="price-page.php">Цены</a></li>
-                <li><a href="gallery-page.php">Фотогалерея</a></li>
-                <li><a href="articles-page.php">Статьи</a></li>
-                <li><a href="buy-page.php">Где купить</a></li>
-                <li><a href="contacts-page.php">Контакты</a></li>
+                <li class="active"><a href="product.html">Продукция</a></li>
+                <li><a href="prices-page.html">Цены</a></li>
+                <li><a href="gallery-page.html">Фотогалерея</a></li>
+                <li><a href="articles-page.html">Статьи</a></li>
+                <li><a href="buy-page.html">Где купить</a></li>
+                <li><a href="contacts-page.html">Контакты</a></li>
             </ul>
 
             <!--Search-->
@@ -97,594 +100,75 @@
         </div>
     </div>
 </div>
-
-
-<!--MAIN FOR PRODUCTS-PAGE-->
-<div class="products-page">
-    <div class="container">
-        <div class="row po-rel">
-
-            <!--MOBILE BUTTON FOR SIDEBAR-->
-            <div class="sidebar-btn">
-                <div class="po-rel">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-
-            <!--SIDEBAR-->
-            <div class="sidebar">
-                <div class="col-xs-12 col-md-3">
-                    <div class="sidebar-category">
-                        <div class="sidebar-category-title">
-                            <span>Популярное</span>
+<div class="main">
+    <!--BLOCK HEADER MAIN-->
+    <div class="header-main-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-head">
+                    <div class="big-img col-sm-12" id="slider">
+                        <div>
+                            <img src="img/befor-header-main-big-img.jpg" alt="">
                         </div>
-                        <ul class="sidebar-list">
-                            <li><a href="#">Лиственница для терассы</a></li>
-                            <li><a href="#">Сосна, ель</a></li>
-                            <li><a href="#">Липа для бани</a></li>
-                            <li><a href="#">Дуб на лестницу</a></li>
-                            <li><a href="#">Дуб, ясень</a></li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-category">
-                        <div class="sidebar-category-title">
-                            <span>Каталог</span>
+                        <div>
+                            <img src="img/main-head-during-big-img.jpg" alt="">
                         </div>
-                        <div class="catalog-item sidebar-list">
-                            <div class="catalog-item-title">
-                                <span>Породы</span>
-                            </div>
-                            <div class="panel-group" id="species" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#species"
-                                               href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Лиственница для терассы
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Строганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#species" href="#collapseTwo" aria-expanded="false"
-                                               aria-controls="collapseTwo">
-                                                Сосна, ель
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Строганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#species" href="#collapseThree" aria-expanded="false"
-                                               aria-controls="collapseThree">
-                                                Липа для бани
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="headingThree">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Строганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingFour">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#species" href="#collapseFour" aria-expanded="false"
-                                               aria-controls="collapseFour">
-                                                Дуб для лесницы
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="headingFour">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Строганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingFive">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#species" href="#collapseFive" aria-expanded="false"
-                                               aria-controls="collapseFive">
-                                                Дуб, ясень
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="headingFive">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar-category">
-                        <div class="catalog-item sidebar-list">
-                            <div class="catalog-item-title">
-                                <span>Стеновые изделия</span>
-                            </div>
-                            <div class="panel-group" id="wall-products" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading1">
-                                        <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#wall-products"
-                                               href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                Евровагонка
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse1" class="panel-collapse collapse " role="tabpanel"
-                                         aria-labelledby="heading">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading2">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#wall-products" href="#collapse2" aria-expanded="false"
-                                               aria-controls="collapse">
-                                                Вагонка-штиль
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading3">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#wall-products" href="#collapse3" aria-expanded="false"
-                                               aria-controls="collapse3">
-                                                Имитация бруса
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading3">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading4">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#wall-products" href="#collapse4" aria-expanded="false"
-                                               aria-controls="collapse4">
-                                                Блок-хаус
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading4">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading5">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#wall-products" href="#collapse5" aria-expanded="false"
-                                               aria-controls="collapse5">
-                                                Планкен
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading5">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar-category">
-                        <div class="catalog-item sidebar-list">
-                            <div class="catalog-item-title">
-                                <span>Напольные покрытия</span>
-                            </div>
-                            <div class="panel-group" id="floor-coverings" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading6">
-                                        <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#floor-coverings"
-                                               href="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                                                Половая доска
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse6" class="panel-collapse collapse " role="tabpanel"
-                                         aria-labelledby="heading6">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading7">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#floor-coverings" href="#collapse7" aria-expanded="false"
-                                               aria-controls="collapse7">
-                                                Паркетная доска
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading7">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading8">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#floor-coverings" href="#collapse8" aria-expanded="false"
-                                               aria-controls="collapse8">
-                                                Палубная доска
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="heading9">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#floor-coverings" href="#collapse9" aria-expanded="false"
-                                               aria-controls="collapse9">
-                                                Террасная доска
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse9" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="heading">
-                                        <div class="panel-body">
-                                            <ul class="catalog-scroll">
-                                                <li><a href="#">Евровагонка</a></li>
-                                                <li><a href="#">Половая доска</a></li>
-                                                <li><a href="#">Имитация бруса</a></li>
-                                                <li><a href="#">Блок хаус</a></li>
-                                                <li><a href="#">Мебельный щит</a></li>
-                                                <li><a href="#">Оконный брус</a></li>
-                                                <li><a href="#">Строганный брусок</a></li>
-                                                <li><a href="#">Cтроганная доска</a></li>
-                                                <li><a href="#">Пиломатериал хвойный</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div>
+                            <img src="img/main-head-after-big-img.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--CONTENT-->
-            <div class="content">
-                <div class="col-sm-12 col-md-9 ">
-                    <div class="row">
-                        <!--CONTENT-HEADER-->
-                        <div class="content-header">
-                            <div class="col-xs-6 col-sm-4 box-max-768">
-                                <div class="content-header-box">
-                                    <img class="max" src="img/content-header-img_1.jpg" alt="">
-                                    <span class="content-header-text">
-                                        Стеновые, потолочные<br>и фасадные изделия
-
-                                    </span>
-                                    <span class="a-text">
-                                        <a href="">Евровагонка</a>
-                                        <a href="">Блок-хаус</a>
-                                        <a href="">Планкен</a>
-                                        <a href="">Имитация бруса</a>
-                                        <a href="">Строганная доска и брусок</a>
-                                        <a href="">Вагонка-штиль</a>
-                                    </span>
-                                    <a href="#"></a>
-                                </div>
+        </div>
+    </div>
+    <!--OUR PRODUCTION-->
+    <div class="our-production">
+        <div class="container">
+            <div class="title">
+                <span>Наша продукция</span>
+                <a href="#" class="button">Перейти в каталог</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="kind-production">
+                        <div class="kind-content outdoor">
+                            <div class="kind-icon"></div>
+                            <div class="kind-text">
+                                <span class="kind-head-text">Напольное <br> покрытие</span>
+                                <span>Половая и паркетная доска, палубная и терассная доска</span>
                             </div>
-                            <div class="col-sm-8 box-768">
-                                <div class="row .box-flex">
-                                    <div class="col-sm-6 col-xs-6">
-                                        <div class="content-header-box">
-                                            <img src="img/content-header-img_2.jpg" alt="">
-                                            <span class="content-header-text">
-                                                Покрытия для пола и террас
-                                            </span>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-6">
-                                        <div class="content-header-box">
-                                            <img src="img/content-header-img_3.jpg" alt="">
-                                            <span class="content-header-text">
-                                                Лестничные элементы
-                                            </span>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="content-header-box">
-                                            <img src="img/content-header-img_4.jpg" alt="">
-                                            <span class="content-header-text">
-                                                Крепежи, двери, всё для бани и другая продукция
-                                            </span>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <!--CONTENT POPULAR-->
-                        <div class="content-popular">
-                            <div class="col-sm-12 col-md-12 ">
-                                <span class="headline">
-                                    Популярное
-                                </span>
-                                <div class="row">
-                                    <div class="col-sm-4 col-xs-6">
-                                        <div class="content-popular-card">
-                                            <div class="content-popular-img">
-                                                <img src="img/content-popular-img_1.jpg" alt="">
-                                            </div>
-                                            <div class="content-popular-text">
-                                                <h6>Паркетная евродоска 1 класса</h6>
-                                                <span class="actual-price">1500 руб/м<sup>2</sup></span>
-                                                <span class="old-price">2546 руб/м<sup>2</sup></span>
-                                            </div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-6">
-                                        <div class="content-popular-card">
-                                            <div class="content-popular-img">
-                                                <img src="img/content-popular-img_2.jpg" alt="">
-                                            </div>
-                                            <div class="content-popular-text">
-                                                <h6>Массивная паркетная доска
-                                                    из отменных сортов дуба</h6>
-                                                <span class="actual-price">433 руб/м<sup>2</sup></span>
-                                                <span class="old-price">546 руб/м<sup>2</sup></span>
-                                            </div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-6">
-                                        <div class="content-popular-card">
-                                            <div class="content-popular-img">
-                                                <img src="img/content-popular-img_3.jpg" alt="">
-                                            </div>
-                                            <div class="content-popular-text">
-                                                <h6>Паркетная евродоска 1 класса</h6>
-                                                <span class="actual-price">1500 руб/м<sup>2</sup></span>
-                                                <span class="old-price">2546 руб/м<sup>2</sup></span>
-                                            </div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-6">
-                                        <div class="content-popular-card">
-                                            <div class="content-popular-img">
-                                                <img src="img/content-popular-img_1.jpg" alt="">
-                                            </div>
-                                            <div class="content-popular-text">
-                                                <h6>Паркетная евродоска 1 класса</h6>
-                                                <span class="actual-price">1500 руб/м<sup>2</sup></span>
-                                                <span class="old-price">2546 руб/м<sup>2</sup></span>
-                                            </div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-6">
-                                        <div class="content-popular-card">
-                                            <div class="content-popular-img">
-                                                <img src="img/content-popular-img_2.jpg" alt="">
-                                            </div>
-                                            <div class="content-popular-text">
-                                                <h6>Массивная паркетная доска
-                                                    из отменных сортов дуба</h6>
-                                                <span class="actual-price">433 руб/м<sup>2</sup></span>
-                                                <span class="old-price">546 руб/м<sup>2</sup></span>
-                                            </div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-6">
-                                        <div class="content-popular-card">
-                                            <div class="content-popular-img">
-                                                <img src="img/content-popular-img_3.jpg" alt="">
-                                            </div>
-                                            <div class="content-popular-text">
-                                                <h6>Паркетная евродоска 1 класса</h6>
-                                                <span class="actual-price">1500 руб/м<sup>2</sup></span>
-                                                <span class="old-price">2546 руб/м<sup>2</sup></span>
-                                            </div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row"></div>
-                                <div class="row"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="kind-production">
+                        <div class="kind-content wall">
+                            <div class="kind-icon"></div>
+                            <div class="kind-text">
+                                <span class="kind-head-text">Стеновые <br> изделия</span>
+                                <span>Евровагонка, имитация бруса, блок хаус, планкен</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="kind-production">
+                        <div class="kind-content external">
+                            <div class="kind-icon"></div>
+                            <div class="kind-text">
+                                <span class="kind-head-text">Наружная <br> отделка</span>
+                                <span>Имитация бруса, вагонка штиль</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="kind-production">
+                        <div class="kind-content thermal">
+                            <div class="kind-icon"></div>
+                            <div class="kind-text">
+                                <span class="kind-head-text">Термодревесина</span>
+                                <span>Вагонка для отделки бани и сауны</span>
                             </div>
                         </div>
                     </div>
@@ -692,7 +176,679 @@
             </div>
         </div>
     </div>
+    <!--SPECIAL OFFER-->
+    <div class="special-offer">
+        <div class="container">
+            <div class="title">
+                <span>Спецпредложения</span>
+                <a href="#" class="button">Все спецпредложения</a>
+            </div>
+            <div class="row">
+                <!--1 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-1.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Массивная паркетная доска <br> из отменных сортов дуба</span>
+                            </div>
+                            <div class="special-price">
+                                <span>433 руб/м<sup>2</sup></span>
+                                <span>546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-25<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--2 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-2.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Паркетная евродоска 1 класса</span>
+                            </div>
+                            <div class="special-price">
+                                <span>1500 руб/м<sup>2</sup></span>
+                                <span>2546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-30<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--3 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-3.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Массивная паркетная доска <br> из отменных сортов дуба</span>
+                            </div>
+                            <div class="special-price">
+                                <span>433 руб/м<sup>2</sup></span>
+                                <span>546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-25<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--4 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-4.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Паркетная евродоска 1 класса</span>
+                            </div>
+                            <div class="special-price">
+                                <span>1500 руб/м<sup>2</sup></span>
+                                <span>2546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-30<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--5 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-5.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Массивная паркетная доска <br> из отменных сортов дуба</span>
+                            </div>
+                            <div class="special-price">
+                                <span>433 руб/м<sup>2</sup></span>
+                                <span>546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-25<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--6 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-6.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Паркетная евродоска 1 класса</span>
+                            </div>
+                            <div class="special-price">
+                                <span>1500 руб/м<sup>2</sup></span>
+                                <span>2546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-30<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--7 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-7.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Массивная паркетная доска <br> из отменных сортов дуба</span>
+                            </div>
+                            <div class="special-price">
+                                <span>433 руб/м<sup>2</sup></span>
+                                <span>546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-25<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!--8 block-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="special-block">
+                        <div class="special-img">
+                            <img src="img/special-offer-img-8.jpg" alt="">
+                        </div>
+                        <div class="special-all-text">
+                            <div class="special-text">
+                                <span>Паркетная евродоска 1 класса</span>
+                            </div>
+                            <div class="special-price">
+                                <span>1500 руб/м<sup>2</sup></span>
+                                <span>2546 руб/м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <div class="sell">
+                            <span>-30<sup>%</sup></span>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--RealWood IT-->
+    <div class="real-wood-it">
+        <div class="container">
+            <div class="title">
+                <span>Realwood это</span>
+                <a href="#" class="button">Станьте нашим партнёром</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="team real-wood-it-box">
+                        <div class="real-it-img"></div>
+                        <div class="real-it-text">
+                            <span>Команда <br> профессионалов</span>
+                            <span>более 10 лет на рынке <br> пиломатериалов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="network real-wood-it-box">
+                        <div class="real-it-img"></div>
+                        <div class="real-it-text">
+                            <span>Сеть заводов <br>по всей России</span>
+                            <span>мы работаем во всех регионах <br> России без задержек на <br>доставку и транспортировку</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="quantity real-wood-it-box">
+                        <div class="real-it-img"></div>
+                        <div class="real-it-text">
+                            <span>500 м3 леса<br>на складе</span>
+                            <span>Мы готовы выполнить <br> заказ любого объема <br>в кратчайшие сроки</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="low-price real-wood-it-box">
+                        <div class="real-it-img"></div>
+                        <div class="real-it-text">
+                            <span>Низкие<br>цены</span>
+                            <span>Покупая у нас, вы не<br>платите посредникам</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--LEADERS-->
+    <div class="leaders">
+        <div class="container">
+            <div class="title">
+                <span>Лидеры продаж</span>
+                <a href="#" class="button">Перейти в каталог</a>
+            </div>
+            <div class="row">
+                <!--BLOCK 1-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="leader">
+                        <div class="leader-sample-1 leader-img">
+                            <img src="img/leader-img_1.jpg" alt="">
+                        </div>
+                        <div class="leader-text">
+                            <span class="leader-price">от 433 руб/м<sup>2</sup></span>
+                            <span class="leader-top-text">Массивная паркетная доска </span>
+                            <span class="leader-low-text">Массивная паркетная доска <br> из отменных сортов дуба долго сохраняет свой цвет</span>
+                            <a href="#" class="button green">Узнать подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--BLOCK 2-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="leader">
+                        <div class="leader-sample-1 leader-img">
+                            <img src="img/leader-img_2.jpg" alt="">
+                        </div>
+                        <div class="leader-text">
+                            <span class="leader-price">от 768 руб/м<sup>2</sup></span>
+                            <span class="leader-top-text">Массивная паркетная доска </span>
+                            <span class="leader-low-text">Массивная паркетная доска <br> из отменных сортов дуба долго сохраняет свой цвет</span>
+                            <a href="#" class="button green">Узнать подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--BLOCK 3-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="leader">
+                        <div class="leader-sample-1 leader-img">
+                            <img src="img/leader-img_3.jpg" alt="">
+                        </div>
+                        <div class="leader-text">
+                            <span class="leader-price">от 879 руб/м<sup>2</sup></span>
+                            <span class="leader-top-text">Массивная паркетная доска </span>
+                            <span class="leader-low-text">Массивная паркетная доска <br> из отменных сортов дуба долго сохраняет свой цвет</span>
+                            <a href="#" class="button green">Узнать подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+                <!--BLOCK 4-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="leader">
+                        <div class="leader-sample-1 leader-img">
+                            <img src="img/leader-img_3.jpg" alt="">
+                        </div>
+                        <div class="leader-text">
+                            <span class="leader-price">от 1243 руб/м<sup>2</sup></span>
+                            <span class="leader-top-text">Массивная паркетная доска </span>
+                            <span class="leader-low-text">Массивная паркетная доска <br> из отменных сортов дуба долго сохраняет свой цвет</span>
+                            <a href="#" class="button green">Узнать подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CALCULATOR-->
+    <div class="calculator">
+        <div class="container">
+            <div class="title">
+                <span>Уютный и комфортный дом это не так дорого. Убедитесь сами:</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <form action="" class="form-calculator">
+                        <div class="calculator-text">
+                            <span>Выбор материала:</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <select class="form_control_select" id="material">
+                                    <option value="0" disabled selected style='display:none;'>Выберите пиломатериал
+                                    </option>
+                                    <option value="500">Сосна</option>
+                                    <option value="600">Ель</option>
+                                    <option value="700">Берёза</option>
+                                    <option value="800">Кедр</option>
+                                    <option value="900">Бук</option>
+                                    <option value="1000">Дуб</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <select class="form_control_select" id="sort">
+                                    <option value="0" disabled selected style='display:none;'>Выберите сорт</option>
+                                    <option value="0">Сорт 1</option>
+                                    <option value="20">Сорт 2</option>
+                                    <option value="40">Сорт 3</option>
+                                    <option value="60">Сорт 4</option>
+                                    <option value="80">Сорт 5</option>
+                                    <option value="100">Сорт 6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row ma-bot">
+                            <div class="col-xs-6">
+                                <select class="form_control_select" id="dlina">
+                                    <option value="0" disabled selected style='display:none;'>Длина</option>
+                                    <option value="0">500мм</option>
+                                    <option value="20">1000мм</option>
+                                    <option value="40">1500мм</option>
+                                    <option value="60">2000мм</option>
+                                    <option value="80">2500мм</option>
+                                    <option value="100">3000мм</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <select class="form_control_select" id="shirina">
+                                    <option value="0" disabled selected style='display:none;'>Ширина</option>
+                                    <option value="0">100мм</option>
+                                    <option value="10">150мм</option>
+                                    <option value="20">200мм</option>
+                                    <option value="35">250мм</option>
+                                    <option value="50">300мм</option>
+                                    <option value="70">400мм</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calculator-text">
+                            <span>Укажите площадь помещения:</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="number" name="длина" placeholder="Длина" min="1" id="s-dlina">
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="number" name="ширина" placeholder="Ширина" min="1" id="s-shirina">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12 result">
+                    <div class="total">
+                        <span id="total-price">0</span><i class="fa fa-rub" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="button green">Заказать подробный расчет</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--SLIDER WORKS-->
+    <div class="works">
+        <div class="container">
+            <div class="title">
+                <span>Галерея выполненных работ</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="slider-works">
+                        <div class="slide-work">
+                            <img src="img/slide-work-img-1.jpg" alt="">
+                            <div class="col-xs-5 slide-work-text">
+                                <div class="slide-work-content">
+                                    <p>Пол в этой городской квартире <br>
+                                        был отделан массивной паркетной <br>
+                                        доской из дуба.</p>
+                                    <ul>
+                                        <li><span>Материал:<span class="dot"></span></span><span>15 000</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li><span>Доставка:<span class="dot"></span></span><span>1 500</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li><span>Монтаж:<span class="dot"></span></span><span>7 500</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="button green">Посмотреть все работы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-work">
+                            <img src="img/slide-work-img-1.jpg" alt="">
+                            <div class="col-xs-5 slide-work-text">
+                                <div class="slide-work-content">
+                                    <p>Пол в этой городской квартире <br>
+                                        был отделан массивной паркетной <br>
+                                        доской из дуба.</p>
+                                    <ul>
+                                        <li><span>Материал:<span class="dot"></span></span><span>15 000</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li><span>Доставка:<span class="dot"></span></span><span>1 500</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li><span>Монтаж:<span class="dot"></span></span><span>7 500</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="button green">Посмотреть все работы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-work">
+                            <img src="img/slide-work-img-1.jpg" alt="">
+                            <div class="col-xs-5 slide-work-text">
+                                <div class="slide-work-content">
+                                    <p>Пол в этой городской квартире <br>
+                                        был отделан массивной паркетной <br>
+                                        доской из дуба.</p>
+                                    <ul>
+                                        <li><span>Материал:<span class="dot"></span></span><span>15 000</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li><span>Доставка:<span class="dot"></span></span><span>1 500</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li><span>Монтаж:<span class="dot"></span></span><span>7 500</span><i
+                                                class="fa fa-rub"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="button green">Посмотреть все работы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--OUR PLANTS-->
+    <div class="our-plants">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="title">
+                        <span>Наши заводы</span>
+                    </div>
+                    <div class="map" id="map">
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="title">
+                        <span>Полезное от REALWOOD</span>
+                    </div>
+                    <div class="useful-container">
+                        <div class="useful-block">
+                            <img src="img/useful-img-1.jpg" alt="">
+                            <div class="useful-text">
+                                <span>Зимняя древесина для пиломатериалов</span>
+                                <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных
+                                    зимой.</p>
+                            </div>
+                        </div>
+                        <div class="useful-block">
+                            <img src="img/useful-img-2.jpg" alt="">
+                            <div class="useful-text">
+                                <span>Блок-хаус – гарант качественной отделки</span>
+                                <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных
+                                    зимой.</p>
+                            </div>
+                        </div>
+                        <div class="useful-block">
+                            <img src="img/useful-img-3.jpg" alt="">
+                            <div class="useful-text">
+                                <span>Новые материалы для обработки </span>
+                                <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных
+                                    зимой.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NEWS-->
+    <div class="news">
+        <div class="container">
+            <div class="title">
+                <span>Новости</span>
+            </div>
+            <div class="row">
+                <!--NEWS BLOCK 1-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="news-block">
+                        <span class="news-date">2 июня 2015 г.</span>
+                        <span class="news-title">Офис-склад работает по субботам!</span>
+                        <span class="news-text">Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</span>
+                    </div>
+                </div>
+                <!--NEWS BLOCK 2-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="news-block">
+                        <span class="news-date">23 мая 2015 г.</span>
+                        <span class="news-title">Повышение цен на продукцию с 1 мая 2015 года</span>
+                        <span class="news-text">Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</span>
+                    </div>
+                </div>
+                <!--NEWS BLOCK 3-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="news-block">
+                        <span class="news-date">21 мая 2015 г.</span>
+                        <span class="news-title">Офис-склад работает по субботам!</span>
+                        <span class="news-text">Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</span>
+                    </div>
+                </div>
+                <!--NEWS BLOCK 4-->
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="news-block">
+                        <span class="news-date">17 мая 2015 г.</span>
+                        <span class="news-title">Повышение цен на продукцию с 1 мая 2015 года</span>
+                        <span class="news-text">Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SKILLFUL-->
+    <div class="skillful">
+        <div class="container">
+            <div class="title">
+                <span>Для тех, у кого золотые руки</span>
+            </div>
+        </div>
+        <div class="skillful-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 pull-right">
+                        <div class="skillful-block">
+                            <span class="skillful-title">Пергола</span>
+                            <span class="skillful-text">Деревянные перголы являются самыми популярными и эстетически привлекательными. Для того что построить деревянную перголу потребуется совсем немного времени и сил. Рекомендуется изготавливать перголу из наиболее прочных сортов деревесины: ели, сосны и дуба.</span>
+                            <ul>
+                                <li>
+                                    <span>Стоимость материала:</span>
+                                    <span>7 000 <i class="fa fa-rub" aria-hidden="true"></i></span>
+                                </li>
+                                <li>
+                                    <span>Уровень сложности:</span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>Затраты времени:</span>
+                                    <span>10 - 12 часов</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="skillful-a">Скачать техническую документацию</a>
+                            <a href="#" class="skillful-a">Скачать смету</a>
+                            <div class="button-block">
+                                <a href="#" class="button green">Посмотреть проект</a>
+                                <a href="#" class="button green">Посмотреть все проекты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--WOOD SPECIES-->
+    <div class="wood-species">
+        <div class="container">
+            <div class="title">
+                <span>Породы деревьев</span>
+                <a href="#" class="button">Перейти в каталог</a>
+            </div>
+            <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="wood-species-block">
+                    <div class="wood-species-img">
+                        <img src="img/wood-species-img-1.jpg" alt="">
+                    </div>
+                    <a href="#" class="wood-hover">
+                        <span class="wood-species-text">
+                            <span>Лиственница</span>
+                            <span>Долговечно</span>
+                        </span>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="wood-species-block">
+                    <div class="wood-species-img">
+                        <img src="img/wood-species-img-2.jpg" alt="">
+                    </div>
+                    <a href="#" class="wood-hover">
+                        <span class="wood-species-text">
+                            <span>Сосна и ель</span>
+                            <span>Долговечно</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="wood-species-block">
+                    <div class="wood-species-img">
+                        <img src="img/wood-species-img-3.jpg" alt="">
+                    </div>
+                    <a href="#" class="wood-hover">
+                        <span class="wood-species-text">
+                            <span>Липа</span>
+                            <span>Долговечно</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="wood-species-block">
+                    <div class="wood-species-img">
+                        <img src="img/wood-species-img-4.jpg" alt="">
+                    </div>
+                    <a href="#" class="wood-hover">
+                        <span class="wood-species-text">
+                            <span>Дуб и Ясень</span>
+                            <span>Долговечно</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 <div class="footer">
     <div class="container">
         <div class="row">
@@ -726,8 +882,10 @@
             <div class="col-lg-3 col-sm-12 logo-box">
                 <span class="head"><a href="index.php"><img src="img/footer-logo.png" alt=""></a></span>
                 <ul>
-                    <li><span><a href="#">(123) 456-78-99</a></span><span><a href="#">(123) 456-78-99</a></span></li>
-                    <li><span><a href="#">(123) 456-78-99</a></span><span><a href="#">(123) 456-78-99</a></span></li>
+                    <li><span><a href="#">(123) 456-78-99</a></span><span><a href="#">(123) 456-78-99</a></span>
+                    </li>
+                    <li><span><a href="#">(123) 456-78-99</a></span><span><a href="#">(123) 456-78-99</a></span>
+                    </li>
                     <li><a href="#">s-leswood@ya.ru</a></li>
                     <li><a href="#">МО, ПО. Путилково 69км. МКАД,<br>ЗАО Гринвуд, строение 9, оф. 85<br>(от МКАД 200
                         метров)</a></li>
@@ -737,7 +895,14 @@
     </div>
 
 </div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbNM8KA_YJ2b6nUF8MQe02l1-tiRVsT7U&callback=initMap">
+</script>
+<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?&sensor=true"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.gmap.min.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<script src="js/slick.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/libs.min.js"></script>

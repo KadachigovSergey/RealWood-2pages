@@ -1,0 +1,115 @@
+//TITLE
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 25px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  span {
+    font-size: 25px;
+    line-height: 1.5;
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  a {
+  }
+}
+
+//BUTTON
+.button {
+  display: inline-block;
+  border: 1px solid $real2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px 20px 10px;
+  font-size: 15px;
+  color: $real2;
+  background: transparent;
+  -webkit-transition: .15s;
+  -moz-transition: .15s;
+  -ms-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+  &:hover {
+    background: $real2;
+    color: #fff;
+  }
+  &.green {
+    background: $real2;
+    color: #fff;
+    &:hover {
+      color: $real2;
+      background: transparent;
+    }
+  }
+}
+
+sup {
+  top: -.3em;
+  font-size: 70%;
+}
+
+//BLOCK FOR PRICE
+.special-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 25px 0 21px;
+
+  span {
+    font-size: 15px;
+    color: #999999;
+    text-decoration: line-through;
+    &:first-child {
+      font-size: 20px;
+      color: #000;
+      text-decoration: none;
+    }
+    @media (max-width: 1199px) {
+      font-size: 12px;
+      &:first-child {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 1199px) {
+      font-size: 12px;
+      &:first-child {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 991px) {
+      font-size: 14px;
+      &:first-child {
+        font-size: 18px;
+      }
+    }
+
+  }
+}
+
+//TEXT FOR MANY BLOCK
+.special-all-text {
+  padding: 0 15px 0 18px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  margin-top: -1px;
+  @media (max-width: 600px) {
+    padding: 0 10px 0 13px;
+  }
+  .special-text {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 11px 0;
+    height: 42px;
+    overflow: hidden;
+  }
+}
+
+
